@@ -8,7 +8,7 @@
 
 .left-side {
     /* width: 250px; */
-    min-height: 789px;
+    min-height: 1250px;
     border-right: 2px solid red;
     position: relative;
     display: flex;
@@ -27,9 +27,39 @@
 } */
 
 .size {
-   position: relative;
-   top: 50px;
-   /* text-align: center; */
+    position: relative;
+    top: 170px;
+    height: 250px;
+    left: 55px;
+}
+
+#mybtn {
+    top: 15px;
+    position: relative;
+}
+
+.hes {
+    position: relative;
+    top: -35px!important;
+}
+
+#Send {
+    display: block;
+    position: relative;
+    top: 15px;
+}
+
+#border_style {
+    position: relative;
+    top: 3px;
+    left: 0px;
+}
+
+select {
+    word-wrap: normal;
+    top: -27px;
+    position: relative;
+    left: 130px;
 }
 
 /* #number1 {
@@ -37,20 +67,34 @@
     height: 150px;
 } */
 
+.text-q {
+    left: -290px;
+    position: relative;
+    top: 360px;
+}
+
 #text1 {
     display: none;
 }
 
 #Send {
     display: none;
+    left: 63px;
 }
 
 .fonts {
     display: none;
+    position: relative;
+    top: 550px;
+    right: 470px;
 }
 
 .borders {
     display: none;
+    /* height: 700px; */
+    /* left: -462px;
+    top: 510px;
+    position: relative; */
 }
 
 #BOrders {
@@ -63,4 +107,17 @@
 
 .border-radius {
     display: none;
+}
+
+.colors {
+    height: 150px;
+    position: relative;
+    top: 50px;
+    right: 120px;
+}
+
+#as1 {
+    position: relative;
+    right: 750px;
+    bottom: 50px;
 }
