@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Create Your Idea</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="left-side col-3">
+                <div class="vheader">
+                    <p>Choices:</p>
+                </div>
+                <hr>
+                <div class="size">
+                    <div class="width">
+                        <label for="width">Width :</label>
+                        <input type="number" name="width" id="width">
+                        <select name="width" id="Width">
+                            <option value="px">PX</option>
+                            <option value="em">EM</option>
+                            <option value="rem">REM</option>
+                            <option value="vh">VH</option>
+                            <option value="vw">VW</option>
+                        </select>
+                    </div>
+                    <div class="height">
+                        <label for="height">Height :</label>
+                        <input type="number" name="height" id="height">
+                        <select name="height" id="Height">
+                            <option value="px">PX</option>
+                            <option value="em">EM</option>
+                            <option value="rem">REM</option>
+                            <option value="vh">VH</option>
+                            <option value="vw">VW</option>
+                        </select>
+                    </div><br>
+                    <button onclick="sizes()" id="mybtn">Send</button>
+                </div>
+                <div class="colors">
+                    <label for="color">Color :</label>
+                    <input type="text" name="color" id="colors">
+                    <button onclick="colors()" id="mybtn">Send</button>
+                </div>
+                <div class="text-q">
+                    <p id="ques">If You Want Add Text ?</p>
+                    <button id="yes" onclick="YES()">Yes</button>
+                    <button id="no" onclick="NO()">No</button>
+                    <textarea type="text" name="text-1" id="text1"></textarea>
+                    <button onclick="send()" id="Send">Send</button>
+                </div>
+                <div class="fonts">
+                    <label for="font">FontSize :</label>
+                    <input type="number" name="font" id="font">
+                    <select name="font" id="Font">
+                        <option value="px">PX</option>
+                        <option value="em">EM</option>
+                        <option value="rem">REM</option>
+                        <option value="vh">VH</option>
+                        <option value="vw">VW</option>
+                    </select>
+                    <div class="font-colors">
+                        <label for="color">Color :</label>
+                        <input type="text" name="color" id="font_colors">
+                        <label for="color">Background  Color :</label>
+                        <input type="text" name="color" id="back_colors">
+                    </div>
+                    <div class="border">
+                        <p id="quest">If You Want Add Border ?</p>
+                        <button id="yes" onclick="yES()">Yes</button>
+                        <button id="no" onclick="nO()">No</button>
+                        <div class="borders">
+                            <label for="border">Border-Width :</label>
+                            <input type="number" name="border" id="bOrders">
+                            <select name="border" id="Border">
+                                <option value="px">PX</option>
+                                <option value="em">EM</option>
+                                <option value="rem">REM</option>
+                                <option value="vh">VH</option>
+                                <option value="vw">VW</option>
+                            </select>
+                            <div class="Borders">
+                                <label for="BOrder">Border-Color :</label>
+                                <input type="text" name="BOrder" id="BOrders">
+                            </div>
+                        </div>
+                        <div class="border-style">
+                            <label for="border-style">Border-Style :</label>
+                            <select name="border-style" id="border_style">
+                                <option value="dotted">Dotted</option>
+                                <option value="dashed">Dashed</option>
+                                <option value="double">Double</option>
+                                <option value="groove">Groove</option>
+                                <option value="hidden">Hidden</option>
+                                <option value="inset">Inset</option>
+                                <option value="none">None</option>
+                                <option value="outset">Outset</option>
+                                <option value="ridge">Ridge</option>
+                                <option value="solid">Solid</option>
+                            </select>
+                        </div>
+                        <div class='border-radius'>
+                            <label for="BORder">Border-Radius :</label>
+                            <input type="text" name="BORder" id="BORders">
+                            <select name="BORder" id="border_radius">
+                                <option value="px">PX</option>
+                                <option value="%">%</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <!-- <button id="reset" onclick="reset()">Sıfırla</button> -->
+            </div>
+            <div class="right-side col-9">
+                <div class="vHeader">
+                    <p>Result :</p>
+                </div>
+                <div id="field">
+                    <pre></pre>
+                    <div id="number1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="index.html"><input type="reset" onclick="reset()" value="Reset"></a>
+</body>
+</html>
+
+<script src="js/script.js"></script>
